@@ -1,0 +1,236 @@
+@charset "UTF-8";
+
+/* Adicionando a font Montserrat */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Customização barra de scroll */
+
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: var(--preto);
+    border: 5px solid var(--preto);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--azul);
+    border-radius: 50px;
+    
+}
+
+:root {
+    --laranja: #f77f00;
+    --azul: #2274a5;
+    --preto: #161314;
+    --branco: #ffffff;
+    --montserrat: 'Montserrat', sans-serif;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    background-color: var(--preto);
+    
+}
+
+/*Configurando o menu*/
+
+header#menu {
+    
+    position: static;
+    top: 10px;
+    
+    background-color: transparent;
+    width: 100vw;
+    height: 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div#logo {
+    height: 30px;
+    margin-left: 30px;
+}
+
+div#paginas{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    height: 60px;
+    
+}
+
+p#sobremim {
+    margin: 0px 50px;
+    align-self: center;
+}
+
+
+div#paginas p {
+    font-weight: bold;
+    padding: 0px 20px;
+}
+
+div#paginas p a {
+    color: var(--branco);
+    text-decoration: none;
+}
+
+/* Configurando a imagem logo */
+
+div#logo img {
+    width: 40px;
+    height: 30px;
+    filter: invert(1);
+    user-select: none;
+}
+
+/* Configurando a capa do site */
+
+section#capa {
+    background-color: var(--preto);
+    height: 100vh;
+    width: 100vw;
+}
+
+img#gato {
+    position: absolute;
+    z-index: 5;
+    width: 40vw;
+    right: 10vw;
+    top: 5vh;
+}
+
+img#logo-capa{
+    position: absolute;
+    filter: invert();
+    height: 70vh;
+    width: 40vw;
+    top: 52vh;
+    transform: translateY(-50%);
+    right: 10vw;
+    z-index: 1;
+    opacity: 0.02;
+}
+
+section#capa h1 {
+    position: absolute;
+    color: var(--branco);
+    font-family: var(--montserrat);
+    z-index: 4;
+    top: 30vh;
+    left: 15vw;
+    font-size: 5em;
+    line-height: 90%;
+    user-select: none;
+}
+
+section#capa h2 {
+    position: absolute;
+    color: var(--laranja);
+    font-family: Arial, Helvetica, sans-serif;
+    top: 65vh;
+    left: 15vw;
+    font-size: 1.1em;
+    font-weight: 100;
+    white-space: nowrap;
+    overflow: hidden;
+    
+    /* Animação digitar */
+    border-right: 1px solid #fff;
+    padding: 0px 6px;
+    user-select: none;
+}
+
+/* Sessão sobre mim */
+
+div#helloworld {
+    position: absolute;
+    text-align: center;
+    font-size: 2.5em;
+    color: var(--laranja);
+    font-family: var(--montserrat);
+    margin-bottom: 5vh;
+    width: 50vw;
+    left: 50vw;
+    transform: translateX(-50%);
+}
+
+div#helloworld > h1 {
+    position: relative;
+    margin: 0;
+    z-index: 2;
+}
+
+div#elipse1 {
+    position: absolute;
+    top: 0px;
+    width: 50vw;
+    height: 100%;
+    border: 1px solid var(--branco);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+div#elipse2 {
+    position: absolute;
+    top: 20%;
+    width: 30.90vw;
+    height: 61.80%;
+    border: 1px solid var(--branco);
+    border-radius: 50%;
+    right: 19%;
+    z-index: 1;
+}
+
+div#elipse3 {
+    position: absolute;
+    top: 40%;
+    width: 19.09vw;
+    height: 38.19%;
+    border: 1px solid var(--branco);
+    border-radius: 50%;
+    right: 50%;
+    transform: translateX(50%);
+
+    z-index: 1;
+}
+
+section#sobremim{
+    position: relative;
+    top: 15vh;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+
+}
+
+div.blocos-sobre {
+    width: 25vw;
+    
+    
+}
+
+img#ilustracao-1{
+    width: 25vw;
+    
+}
+
+div#bloco-2 > p, div#bloco-3 > p{
+    color: var(--branco);
+    text-align: justify;
+}
+
+div#bloco-2 > h1, div#bloco-3 > h1 {
+    color: var(--branco);
+    text-align: center;
+}
+
