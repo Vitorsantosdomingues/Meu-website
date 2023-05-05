@@ -27,10 +27,10 @@
         </div>
     </header>
     <section id="capa">
-        <img id="gato" src="imagens/gato/gato-laranja.png" alt="gato">
+        <img id="gato" class="rellax" data-rellax-speed="-2" src="imagens/gato/gato-laranja.png" alt="gato"> <!--  -->
         <img id="logo-capa" src="imagens/simbolo-preta.png" alt="logo">
-        <h1>VITOR <br> SANTOS</h1>
-        <h2 class="typing-animation">Web Developer & Logo Designer</h2>
+        <h1 class="rellax" data-rellax-speed="5">VITOR <br> SANTOS</h1> <!--  -->
+        <h2 class="typing-animation rellax" data-rellax-speed="2">Web Developer & Logo Designer</h2> <!--  -->
     </section>
 
     <!-- Sessão sobre mim -->
@@ -88,5 +88,9 @@
         requestAnimationFrame(raf)
     </script>
     <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+    <script>
+        var rellax = new Rellax('.rellax');
+    </script>
 </body>
 </html>
