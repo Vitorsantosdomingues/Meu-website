@@ -20,10 +20,11 @@
 
 :root {
     --laranja: #f77f00;
-    --azul: #2274a5;
-    --preto: #161314;
+    --azul: #313bff;
+    --roxo: #3b1180;
     --branco: #ffffff;
     --montserrat: 'Montserrat', sans-serif;
+    --preto:#0b0b0e;
 }
 
 body {
@@ -32,7 +33,7 @@ body {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden;
-    background-color: var(--preto);
+    background-color: var(--azul);
     
 }
 
@@ -93,14 +94,14 @@ div#logo img {
 /* Configurando a capa do site */
 
 section#capa {
-    background-color: var(--preto);
+    background-color: var(--azul);
     height: 100vh;
     width: 100vw;
 }
 
 img#gato {
     position: absolute;
-    z-index: 5;
+    z-index: 4;
     width: 40vw;
     right: 10vw;
     top: 5vh;
@@ -108,14 +109,14 @@ img#gato {
 
 img#logo-capa{
     position: absolute;
-    filter: invert();
+    filter: invert(1);
     height: 70vh;
     width: 40vw;
     top: 52vh;
     transform: translateY(-50%);
     right: 10vw;
     z-index: 1;
-    opacity: 0.02;
+    opacity: 100%;
 }
 
 section#capa h1 {
@@ -147,60 +148,111 @@ section#capa h2 {
     user-select: none;
 }
 
-/* Sessão sobre mim */
+/* Sessão cards */
 
-div#helloworld {
-    position: absolute;
-    text-align: center;
-    font-size: 2.5em;
-    color: var(--laranja);
-    font-family: var(--montserrat);
-    width: 100vw;
-    z-index: 6;
-    background-color: #fff;
-}
-
-section#sobremim{
-    position: relative;
-    width: 100vw;
-    height: 200vh;
+section#cards {
     display: flex;
-    justify-content: space-around;
+    width: 100vw;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--preto);
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    z-index: 5;
-    background-color: #fff;
-    
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
     
 }
 
-div#div-txt1{
+.container .card {
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #ffffff45;
+    border-left: 1px solid #ffffff45;
+    backdrop-filter: blur(10px);
+    background-color: #313bff;
+}
+
+.container .card .content {
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: .7s;
+    
+}
+
+.container .card:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.container .card .content h2{
     position: absolute;
-    width: 25vw;
-    right: 18vw;
-    top: 135vh;
-    z-index: 6;
-
+    top: -80px;
+    right: 30px;
+    font-size: 8em;
+    color: #ffffff0e;
+    pointer-events: none;
 }
 
-p.txt1 {
-    
-    color: var(--preto);
-    letter-spacing: 1px;
+.container .card .content h3{
+    font-size: 1.8em;
+    color: #fff;
+    z-index: 1;
+    user-select: none;
+}
+
+.container .card .content p {
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
     text-align: justify;
+    user-select: none;
 }
 
-p#txt1, h1#titulo-1 {
-    visibility: hidden;
+.container .card .content a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 20px;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition-property: background-color,color, transform;
+    transition-duration: .5s;
 }
 
-div#div-txt2{
+.container .card .content a:hover{
+    background-color: #0b0b0b;
+    color: #fff;
+}
+
+div.icone {
+    display: flex;
     position: absolute;
-    width: 25vw;
-    left: 19vw;
-    top: 135vh;
-    z-index: 6;
-}
-
-#div-txt2 > h1,h2,#div-txt1 > h1,h2 {
-    color: var(--azul);
+    width: 100%;
+    height: 76px;
+    justify-content: center;
+    align-items: center;
+    
+    transform: translateX(50%);
+    right: 50%;
+    user-select: none;
+    
 }
