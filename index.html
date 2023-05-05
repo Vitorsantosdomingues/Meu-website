@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="animacoes.css">
     <link rel="shortcut icon" href="imagens/logo-branca.ico" type="image/x-icon">
+    <script src="https://unpkg.com/scrollreveal"></script> <!-- Script Efeito JS revelação -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script> <!-- Rellax JS Efeito Scroll Parallax -->
 </head>
 <body>
     <header id="menu">
@@ -27,22 +29,35 @@
         </div>
     </header>
     <section id="capa">
-        <img id="gato" class="rellax" data-rellax-speed="-1" src="imagens/gato/gato-laranja.png" alt="gato"> <!-- GATO -->
+        <img id="gato" class="rellax" data-rellax-speed="-4" src="imagens/gato/gato-laranja.png" alt="gato"> <!-- GATO -->
         <img id="logo-capa" src="imagens/simbolo-preta.png" alt="logo">
-        <h1 class="rellax" data-rellax-speed="5">VITOR <br> SANTOS</h1> <!-- MEU NOME -->
-        <h2 class="typing-animation rellax" data-rellax-speed="0">Web Developer & Logo Designer</h2> <!-- SUBTITLE NOME -->
+        <h1 class="rellax" id="titulo-meunome" data-rellax-speed="4">VITOR <br> SANTOS</h1> <!-- MEU NOME -->
+        <h2 class="typing-animation rellax" id="subtittle" data-rellax-speed="2">Web Developer & Logo Designer</h2> <!-- SUBTITLE NOME -->
     </section>
 
     <!-- Sessão sobre mim -->
     <section id="titulo-sobremim">
     <div id="helloworld">
-        <h1 class="rellax" data-rellax-speed="3">Sobre mim</h1>
+        <h1 id="titulo-1">Sobre mim</h1>
     </div>
 
     </section>
-        <div>
-            <p>Olá prazer</p>
+        <div id="div-txt1">
+            <h1 class="txt1">Quem sou eu</h1>
+            <p class="txt1">Olá, eu sou Vitor dos Santos Domingues, um designer gráfico e desenvolvedor web apaixonado pela arte e tecnologia. Moro em Arapongas Paraná, sempre estive interessado em explorar novas maneiras de criar designs inovadores e experiências digitais atraentes.</p>
+            
+        </p>
         </div>
+        <div id="div-txt2">
+            <h1 class="txt2">Meus cursos</h1>
+            <h2 class="txt2">Html e Css | curso em video</h2>
+            <p class="txt2">
+            - HTML e CSS Módulo 1 (carga horário 40h) <br>
+            - HTML e CSS Módulo 2 (carga horário 40h) <br>
+            - HTML e CSS Módulo 3 (carga horário 40h) <br>
+            - HTML e CSS Módulo 4 (carga horário 40h)
+        </div>
+        
 
     <section id="sobremim">
     
@@ -52,6 +67,7 @@
     
     <!-- ------------------------------------------------------------------------------------------------------------------------------- -->
 
+    <!-- Scroll suave -->
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
     <script> 
         const lenis = new Lenis()
@@ -67,10 +83,15 @@
       
         requestAnimationFrame(raf)
     </script>
-    <script src="js/script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+
+    
     <script>
         var rellax = new Rellax('.rellax');
     </script>
+
+
+    
+    <script src="js/toappear.js"></script> <!-- Animação de aparecimento no Scroll-->
+
 </body>
 </html>
