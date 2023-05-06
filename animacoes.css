@@ -1,5 +1,5 @@
 .typing-animation {
-    animation: blinkCursor 650ms infinite normal, typing 2s steps(26) 1s normal;
+    animation: blinkCursor 650ms infinite normal, typing 4s steps(23) 0s normal;
 }
 
 .toApper-animation {

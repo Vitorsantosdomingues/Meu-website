@@ -21,6 +21,9 @@
 :root {
     --laranja: #f77f00;
     --azul: #313bff;
+    --azul1: #2932e7;
+    --azul2: #1e27ce;
+    --azul3: #161fbb;
     --roxo: #3b1180;
     --branco: #ffffff;
     --montserrat: 'Montserrat', sans-serif;
@@ -63,14 +66,7 @@ div#paginas{
     margin: auto;
     align-items: center;
     height: 60px;
-    
 }
-
-p#sobremim {
-    margin: 0px 50px;
-    align-self: center;
-}
-
 
 div#paginas p {
     font-weight: bold;
@@ -93,7 +89,7 @@ div#logo img {
 
 /* Configurando a capa do site */
 
-section#capa {
+section#inicio {
     background-color: var(--azul);
     height: 100vh;
     width: 100vw;
@@ -119,7 +115,7 @@ img#logo-capa{
     opacity: 100%;
 }
 
-section#capa h1 {
+section#inicio h1 {
     position: absolute;
     color: var(--branco);
     font-family: var(--montserrat);
@@ -131,7 +127,7 @@ section#capa h1 {
     user-select: none;
 }
 
-section#capa h2 {
+section#inicio h2 {
     position: absolute;
     color: var(--laranja);
     font-family: Arial, Helvetica, sans-serif;
@@ -148,9 +144,36 @@ section#capa h2 {
     user-select: none;
 }
 
-section#bla{
-    
+section#sobre-mim{
+    position: relative;
+    width: 100vw;
     height: 100vh;
-    background-color: var(--preto);
+    background-color: var(--azul1);
     z-index: 3;
+    
+    display: flex;
+    justify-content: center;
+}
+
+#tittle-sobre-mim {
+    position: absolute;
+    color: var(--branco);
+    font-family: var(--montserrat);
+    background-color: var(--azul3);
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-size: 3em;
+    margin-top: 15vh;
+    z-index: 2;
+    border: 1px solid var(--branco);
+}
+
+#tittle-sobre-mim-down {
+    position: absolute;
+    background-color: var(--azul2);
+    width: 360px;
+    height: 80px;
+    border-radius: 50px;
+    margin-top: 10vh;
+    z-index: 1;
 }
