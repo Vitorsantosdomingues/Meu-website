@@ -101,7 +101,7 @@ section#capa {
 
 img#gato {
     position: absolute;
-    z-index: 4;
+    z-index: 2;
     width: 40vw;
     right: 10vw;
     top: 5vh;
@@ -146,4 +146,11 @@ section#capa h2 {
     border-right: 1px solid #fff;
     padding: 0px 6px;
     user-select: none;
+}
+
+section#bla{
+    
+    height: 100vh;
+    background-color: var(--preto);
+    z-index: 3;
 }
