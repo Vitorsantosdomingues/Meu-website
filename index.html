@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vitor Santos - Developer</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="animacoes.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animacoes.css">
+
     <link rel="shortcut icon" href="imagens/logo-branca.ico" type="image/x-icon">
     <script src="https://unpkg.com/scrollreveal"></script> <!-- Script Efeito JS revelação -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script> <!-- Rellax JS Efeito Scroll Parallax -->
@@ -17,9 +19,9 @@
             <img src="imagens/simbolo-preta.png" alt="logo">
         </div>
         <div id="paginas">
-            <p><a href="#">Inicio</a></p>
-            <p><a href="#">Sobre mim</a></p>
-            <p><a href="#">Portfólio</a></p>
+            <p id="linkinicio"><a href="#">Inicio</a></p>
+            <p id="linksobremim"><a href="#">Sobre mim</a></p>
+            <p id="linkportfólio"><a href="#">Portfólio</a></p>
         </div>
     </header>
     <section id="inicio">
@@ -28,17 +30,55 @@
 
         <img id="logo-capa" src="imagens/simbolo-preta.png" alt="logo">
 
-        <h1 class="rellax" id="titulo-meunome" data-rellax-speed="4">VITOR <br> SANTOS</h1> <!-- MEU NOME -->
-
-        <h2 class="typing-animation rellax" id="subtittle" data-rellax-speed="2">Web Developer & Logo Designer</h2> <!-- SUBTITLE NOME -->
+        <div id="complete-name" class="rellax" data-rellax-speed="0">
+            <span id="titulo-firstname">
+                <span class="rellax" data-rellax-speed="3">V</span>
+                <span class="rellax" data-rellax-speed="2">I</span>
+                <span class="rellax" data-rellax-speed="1">T</span>
+                <span class="rellax" data-rellax-speed="2">O</span>
+                <span class="rellax" data-rellax-speed="3">R</span>
+            </span>
+            <span id="titulo-middlename">
+                <span class="rellax" data-rellax-speed="3">S</span>
+                <span class="rellax" data-rellax-speed="2">A</span>
+                <span class="rellax" data-rellax-speed="1">N</span>
+                <span class="rellax" data-rellax-speed="2">T</span>
+                <span class="rellax" data-rellax-speed="3">O</span>
+                <span class="rellax" data-rellax-speed="4">S</span>
+            </span>
+        </div>
+        <h2 class="typing-animation rellax" id="subtittle" data-rellax-speed="1">Web Developer & Branding Designer</h2> <!-- SUBTITLE NOME -->
+    </section>
+    <img id="svg" src="imagens/layered-waves-haikei.svg" alt="">
+    <section id="perfil">
 
     </section>
 
-    <!-- Sessão sobre mim -->
-    <section id="sobre-mim">
-        <h1 id="tittle-sobre-mim" class="rellax" data-rellax-speed="-1">SOBRE MIM</h1>
-    </section>
+
+
     <!-- ------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- Scroll suave -->
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>

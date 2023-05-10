@@ -24,8 +24,10 @@
     --azul1: #2932e7;
     --azul2: #1e27ce;
     --azul3: #161fbb;
+    --azul4: #001122;
     --roxo: #3b1180;
     --branco: #ffffff;
+    --branco2:e5e5e5;
     --montserrat: 'Montserrat', sans-serif;
     --preto:#0b0b0e;
 }
@@ -36,7 +38,7 @@ body {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden;
-    background-color: var(--azul);
+    background-color: var(--laranja);
     
 }
 
@@ -44,9 +46,7 @@ body {
 
 header#menu {
     
-    position: static;
-    top: 10px;
-    
+    position: absolute;
     background-color: transparent;
     width: 100vw;
     height: 60px;
@@ -54,10 +54,11 @@ header#menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 5;
 }
 
 div#logo {
-    height: 30px;
+    height: auto;
     margin-left: 30px;
 }
 
@@ -82,7 +83,7 @@ div#paginas p a {
 
 div#logo img {
     width: 40px;
-    height: 30px;
+    height: auto;
     filter: invert(1);
     user-select: none;
 }
@@ -91,7 +92,7 @@ div#logo img {
 
 section#inicio {
     background-color: var(--azul);
-    height: 100vh;
+    height: 110vh;
     width: 100vw;
 }
 
@@ -103,33 +104,32 @@ img#gato {
     top: 5vh;
 }
 
+/* animation: flutuacao 10s ease-in-out infinite; */
+
+@keyframes flutuacao {
+    0%, 100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-60px);
+    }
+}
+
 img#logo-capa{
     position: absolute;
     filter: invert(1);
-    height: 70vh;
-    width: 40vw;
-    top: 52vh;
+    height: auto;
+    width: 550px;
+    top: 53vh;
     transform: translateY(-50%);
-    right: 10vw;
+    right: 9vw;
     z-index: 1;
     opacity: 100%;
 }
 
-section#inicio h1 {
-    position: absolute;
-    color: var(--branco);
-    font-family: var(--montserrat);
-    z-index: 4;
-    top: 30vh;
-    left: 15vw;
-    font-size: 5em;
-    line-height: 90%;
-    user-select: none;
-}
-
 section#inicio h2 {
     position: absolute;
-    color: var(--laranja);
+    color: var(--branco);
     font-family: Arial, Helvetica, sans-serif;
     top: 65vh;
     left: 15vw;
@@ -144,27 +144,41 @@ section#inicio h2 {
     user-select: none;
 }
 
-section#sobre-mim{
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--azul1);
-    z-index: 3;
-    
+span#titulo-firstname{
     display: flex;
-    justify-content: center;
+    color: var(--laranja);
+    font-size: 4em;
+    font-weight: 600;
 }
 
-#tittle-sobre-mim {
+span#titulo-middlename{
+    display: flex;
+    color: var(--laranja);
+    font-size: 4em;
+    font-weight: 600;
+}
+
+div#complete-name {
     position: absolute;
-    color: var(--azul);
-    font-family: var(--montserrat);
-    background-color: var(--branco);
-    padding: 10px 30px;
-    border-radius: 50px;
-    font-size: 2em;
-    font-weight: 500;
-    margin-top: -7vh;
-    z-index: 2;
+    top: 40vh;
+    left: 15.5vw;
     
+    width: 17.7em;
+    line-height: 4em;
+    letter-spacing: .2em;
+}
+
+img#svg {
+    position: absolute;
+    width: 100vw;
+    z-index: 3;
+    top: -10vh;
+  
+}
+
+section#perfil{
+    position: relative;
+    height: 100vh;
+    background-color: var(--laranja);
+    z-index: 2;
 }
