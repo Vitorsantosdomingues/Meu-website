@@ -13,7 +13,18 @@
     <script src="https://unpkg.com/scrollreveal"></script> <!-- Script Efeito JS revelação -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script> <!-- Rellax JS Efeito Scroll Parallax -->
 </head>
-<body>
+<body onload="loading()">
+    <div class="box-load">
+        <div class="spinner">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            </div>
+    </div>
+    <div class="content">
     <header id="menu">
         <div id="logo">
             <img src="imagens/simbolo-preta.png" alt="logo">
@@ -26,10 +37,9 @@
     </header>
     <section id="inicio">
 
-        <img id="gato" class="rellax" data-rellax-speed="-4" src="imagens/gato/gato-laranja.png" alt="gato"> <!-- GATO -->
+        <img id="gato" class="rellax" data-rellax-speed="3" src="imagens/gato/gato-laranja.png" alt="gato"> <!-- GATO -->
 
-        <img id="logo-capa" src="imagens/simbolo-preta.png" alt="logo">
-
+        <img id="logo-capa" class="rellax" data-rellax-speed="1" src="imagens/simbolo-preta.png" alt="logo">
         <div id="complete-name" class="rellax" data-rellax-speed="0">
             <span id="titulo-firstname">
                 <span class="rellax" data-rellax-speed="3">V</span>
@@ -45,18 +55,18 @@
                 <span class="rellax" data-rellax-speed="2">T</span>
                 <span class="rellax" data-rellax-speed="3">O</span>
                 <span class="rellax" data-rellax-speed="4">S</span>
+                
             </span>
         </div>
         <h2 class="typing-animation rellax" id="subtittle" data-rellax-speed="1">Web Developer & Branding Designer</h2> <!-- SUBTITLE NOME -->
     </section>
-    <img id="svg" src="imagens/layered-waves-haikei.svg" alt="">
-    <section id="perfil">
+        <section id="perfil">
 
-    </section>
+        </section>
+</div>
 
 
 
-    <!-- ------------------------------------------------------------------------------------------------------------------------------- -->
 
 
 
@@ -96,7 +106,7 @@
       
         requestAnimationFrame(raf)
     </script>
-
+    <script src="js/script.js"></script>
     
     <script>
         var rellax = new Rellax('.rellax');
