@@ -39,7 +39,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden;
     background-color: var(--branco);
-    
 }
 
 /*Configurando o menu*/
@@ -47,7 +46,7 @@ body {
 header#menu {
     
     position: absolute;
-    background-color: transparent;
+    background-color: var(--azul1);
     width: 100vw;
     height: 60px;
 
@@ -103,18 +102,6 @@ img#gato {
     right: 10vw;
     top: 5vh;
 }
-
-/* animation: flutuacao 10s ease-in-out infinite; */
-
-@keyframes flutuacao {
-    0%, 100%{
-        transform: translateY(0px);
-    }
-    50%{
-        transform: translateY(-60px);
-    }
-}
-
 img#logo-capa{
     position: absolute;
     filter: invert(1);
@@ -135,12 +122,10 @@ section#inicio h2 {
     font-size: 1.1em;
     font-weight: 100;
     white-space: nowrap;
-    
     /* Animação digitar */
     border-right: 1px solid #fff;
     padding: 0px 6px;
     user-select: none;
-    
 }
 
 span#titulo-firstname{
@@ -166,33 +151,3 @@ div#complete-name {
     line-height: 4em;
     letter-spacing: .2em;
 }
-
-section#perfil{
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    background-color: var(--azul4);
-
-    
-}
-
-section#perfil h1 {
-    position: absolute;
-    width: 100vw;
-    color: var(--laranja);
-    font-size: 3em;
-    font-family: var(--montserrat);
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    text-align: center;
-    top: 5vh;
-}
-
-
-section#perfil p {
-    width: 33vw;
-    text-align: justify;
-    color: var(--branco);
-    margin: 0;
-}
-
