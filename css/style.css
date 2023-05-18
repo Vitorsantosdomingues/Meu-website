@@ -27,7 +27,7 @@
     --azul4: #001122;
     --roxo: #3b1180;
     --branco: #ffffff;
-    --branco2:e5e5e5;
+    --branco2: #e5e5e5;
     --montserrat: 'Montserrat', sans-serif;
     --preto:#0b0b0e;
 }
@@ -41,14 +41,11 @@ body {
     background-color: var(--branco);
 }
 
-/*Configurando o menu*/
-
 header#menu {
-    
     position: absolute;
-    background-color: var(--azul1);
     width: 100vw;
     height: 60px;
+    
 
     display: flex;
     justify-content: space-between;
@@ -58,25 +55,89 @@ header#menu {
 
 div#logo {
     height: auto;
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
 div#paginas{
     display: flex;
-    margin: auto;
-    align-items: center;
     height: 60px;
+    align-items: center;
+    border: 1px solid #0077ff;
+    border-radius: 0 0 10px 10px;
 }
 
 div#paginas p {
-    font-weight: bold;
-    padding: 0px 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    padding: 0px 30px;
+    text-transform: capitalize;
 }
 
 div#paginas p a {
-    color: var(--branco);
     text-decoration: none;
+    color: var(--branco);
+   
 }
+
+#button-light-dark {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: auto;
+    margin-right: 20px;
+}
+
+/* The switch - the box around the slider */
+.switch-container {
+    position: relative;
+    display: inline-block;
+    width: 3.8em;
+    height: 2em;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch-container input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .switch-container .slider {
+    --background: #0077ff;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--background);
+    transition: background-color 0.5s;
+    border-radius: 30px;
+  }
+  
+  .switch-container .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 50%;
+    left: 10%;
+    bottom: 15%;
+    box-shadow: inset 15px -4px 0px 15px var(--laranja);
+    background: var(--background);
+    transition: transform 0.5s, box-shadow 0.5s;
+  }
+  
+  .switch-container input:checked + .slider {
+    background-color: #000513;
+  }
+  
+  .switch-container input:checked + .slider:before {
+    transform: translateX(115%);
+    box-shadow: inset 8px -4px 0px 0px var(--azul1);
+  }
+  
 
 /* Configurando a imagem logo */
 
@@ -90,7 +151,7 @@ div#logo img {
 /* Configurando a capa do site */
 
 section#inicio {
-    background-color: var(--azul4);
+    background-color:var(--azul4);
     height: 100vh;
     width: 100vw;
 }
@@ -99,25 +160,24 @@ img#gato {
     position: absolute;
     z-index: 2;
     width: 40vw;
-    right: 10vw;
+    right: 13vw;
     top: 5vh;
 }
 img#logo-capa{
     position: absolute;
-    filter: invert(1);
     height: auto;
-    width: 550px;
-    top: 25vh;
-    right: 9vw;
+    width: 450px;
+    top: 35vh;
+    right: 15.5vw;
     z-index: 1;
-    opacity: 100%;
+    filter: invert(1);
 }
 
 section#inicio h2 {
     position: absolute;
     color: var(--branco);
     font-family: Arial, Helvetica, sans-serif;
-    top: 65vh;
+    top: 61vh;
     left: 15vw;
     font-size: 1.1em;
     font-weight: 100;
