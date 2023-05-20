@@ -8,12 +8,12 @@
 
 ::-webkit-scrollbar{
     width: 10px;
-    background-color: var(--preto);
-    border: 5px solid var(--preto);
+    background-color: var(--azul4);
+    border: 5px solid var(--azul4);
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: var(--azul2);
+    background-color: var(--laranja);
     border-radius: 50px;
     
 }
@@ -62,8 +62,6 @@ div#paginas{
     display: flex;
     height: 60px;
     align-items: center;
-    border: 1px solid #0077ff;
-    border-radius: 0 0 10px 10px;
 }
 
 div#paginas p {
@@ -104,7 +102,7 @@ div#paginas p a {
   
   /* The slider */
   .switch-container .slider {
-    --background: #0077ff;
+    --background: var(--azul2);
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -161,13 +159,13 @@ img#gato {
     z-index: 2;
     width: 40vw;
     right: 13vw;
-    top: 5vh;
+    top: 0vh;
 }
 img#logo-capa{
     position: absolute;
     height: auto;
     width: 450px;
-    top: 35vh;
+    top: 30vh;
     right: 15.5vw;
     z-index: 1;
     filter: invert(1);
@@ -175,17 +173,30 @@ img#logo-capa{
 
 section#inicio h2 {
     position: absolute;
+    width: 100vw;
     color: var(--branco);
     font-family: Arial, Helvetica, sans-serif;
-    top: 61vh;
-    left: 15vw;
+    bottom: 5vh;
+    letter-spacing: 3px;
+    text-align: center;
     font-size: 1.1em;
     font-weight: 100;
-    white-space: nowrap;
-    /* Animação digitar */
-    border-right: 1px solid #fff;
-    padding: 0px 6px;
-    user-select: none;
+}
+
+#orcamento {
+    position: absolute;
+    top: 70vh;
+    left: 15.5vw;
+    width: 21vw;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    outline: none;
+    color: #fff;
+    border-radius: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 span#titulo-firstname{
@@ -204,10 +215,80 @@ span#titulo-middlename{
 
 div#complete-name {
     position: absolute;
-    top: 40vh;
+    top: 35vh;
     left: 15.5vw;
     
     width: 17.7em;
     line-height: 4em;
     letter-spacing: .2em;
 }
+
+#redes-sociais {
+    display: flex;
+    position: absolute;
+    left: 15.5vw;
+    top: 60vh;
+    width: 21vw;
+    height: 30px;
+    
+    justify-content: space-between;
+}
+
+#linkedin {
+    width: 30px;
+    height: 30px;
+    background-image: url(../imagens/icones/linkedin.png);
+    background-size: cover;
+}
+
+#github {
+    width: 30px;
+    height: 30px;
+    background-image: url(../imagens/icones/github.png);
+    background-size: cover;
+}
+
+#behance{
+    width: 30px;
+    height: 30px;
+    background-image: url(../imagens/icones/behance.png);
+    background-size: cover;
+}
+
+#instagram{
+    width: 30px;
+    height: 30px;
+    background-image: url(../imagens/icones/instagram.png);
+    background-size: cover;
+}
+
+#servicos {
+    display: flex;
+    background-color: var(--azul4);
+    width: 100vw;
+    height: 130vh;
+}
+
+#servicos h2 {
+    position: absolute;
+    right: 15.5vw;
+    color: var(--laranja);
+    font-family: var(--montserrat);
+    text-transform: uppercase;
+    font-size: 4em;
+    margin: 0;
+    margin-top: 60px;
+}
+
+#atuacoes {
+    position: relative;
+    top: 20vh;
+    transform: translateY(1.5px);
+    left: 15.5vw;
+    height: 114vh;
+    width: 69vw;
+    display: flex;
+    align-items: center;
+    flex-direction: ;
+}
+
