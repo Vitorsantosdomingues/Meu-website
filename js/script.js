@@ -1,2 +1,14 @@
-var scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-console.log(scrollTop)
+const chk = document.getElementById('checkbox-switch')
+const secInicio = document.getElementById('inicio')
+const linkPaginasInicio = document.getElementById('A-linkinicio')
+const linkPaginasSobreMim = document.getElementById('A-linksobremim')
+const linkPaginasPortfolio = document.getElementById('A-linkportfolio')
+const secAtuacao = document.querySelector('section#atuacao')
+chk.addEventListener('change', () => {
+        secInicio.classList.toggle('dark')
+        secAtuacao.classList.toggle('dark')
+        document.body.classList.toggle('dark')
+        linkPaginasInicio.classList.toggle('dark')
+        linkPaginasSobreMim.classList.toggle('dark')
+        linkPaginasPortfolio.classList.toggle('dark')
+})
