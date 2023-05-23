@@ -4,47 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vitor Santos Developer</title>
-
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animacoes.css">
-
+    
+    <title>Vitor Santos Developer</title>
     <link rel="shortcut icon" href="imagens/logo-branca.ico" type="image/x-icon">
     <script src="https://unpkg.com/scrollreveal"></script> <!-- Script Efeito JS revelação -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script> <!-- Rellax JS Efeito Scroll Parallax -->
+
     <script src="https://kit.fontawesome.com/a59b9b09ab.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    
-    <div id="menueffect">
+    <nav id="menudesktop">
 
-    </div>
-    <header id="menu">
-        <div id="logo">
+        <div id="logoMenu">
             <img src="imagens/simbolo-preta.png" alt="logo">
         </div>
-        <div id="paginas">
-            <p id="linkinicio"><a id="A-linkinicio" href="#">Inicio</a></p>
-            <p id="linksobremim"><a id="A-linksobremim" href="#">Sobre mim</a></p>
-            <p id="linkportfólio"><a id="A-linkportfolio" href="#">Portfólio</a></p>
+
+        <div id="linksMenu">
+            <p id="linkinicio"><a href="#">Inicio</a></p>
+            <p id="linksobremim"><a href="#">Sobre mim</a></p>
+            <p id="linkportfólio"><a href="#">Portfólio</a></p>
         </div>
-        <div id="button-light-dark">
+
+        <!-- Botão troca de tema -->
+        <div id="button-light-dark"> 
+
             <label class="switch-container">
+
                 <input id="checkbox-switch" type="checkbox">
                 <span class="slider"></span>
+
               </label>
-        </div>
-    </header>
-    <section id="inicio">
 
-        <img id="gato" class="rellax" data-rellax-speed="3" src="imagens/gato/gato-laranja.png" alt="gato"> <!-- GATO -->
+        </div>
+
+    </nav>
+
+    <main id="home">
+
+        <img id="gato" class="rellax" data-rellax-speed="3" 
+        src="imagens/gato/gato-laranja.png" alt="gato">
+
         <div>
-            <h2 id="work-tittle" class="rellax" data-rellax-speed="0.5">Desenvolvedor Web & Designer Gráfico</h2>
-        </div>
-        <div id="logocapa">
+            <h2 id="work-tittle" class="rellax" data-rellax-speed="0.5"> <!-- Velocidade -->
+                Desenvolvedor Web & Designer Gráfico
+            </h2>
 
         </div>
-        <div id="complete-name" class="rellax" data-rellax-speed="0">
+        <div id="logoHome">
+
+        </div>
+        <div id="complete-name" 
+        class="rellax" data-rellax-speed="0"> <!-- Velocidade -->
+
             <span id="titulo-firstname">
                 <span class="rellax" data-rellax-speed="3">V</span>
                 <span class="rellax" data-rellax-speed="2">I</span>
@@ -61,108 +74,34 @@
                 <span class="rellax" data-rellax-speed="4">S</span>
                 
             </span>
+
         </div>
         
         <div id="redes-sociais">
+
+            <!-- LINKEDIN -->
             <a href="https://www.linkedin.com/in/vitor-dos-santos-domingues-450819252/" target="_blank">
                 <div id="linkedin"></div>
             </a>
+            <!-- GITHUB -->
             <a href="https://github.com/Vitorsantosdomingues" target="_blank">
                 <div id="github"></div>
             </a>
+            <!-- BEHANCE -->
             <a href="https://www.behance.net/vsd1" target="_blank">
                 <div id="behance"></div>
             </a>
+            <!-- INSTAGRAM -->
             <a href="">
                 <div id="instagram"></div>
             </a>
+
         </div>
-    </section>
-    <section id="atuacao">
-        <h2>Atuação</h2>
-        <div class="container-atuacao" id="container-atuacao-1">
-            <div class="container-atuacao-txt">
-                <div class="texto-atuacao">
-                    <h3>Desenvolvimento Web</h3>
-                    <p class="p-atuacao">Criação e produção de sites web como Landing Page, Loja Virtual, Portais. acompanhando as tecnologias e tendências do mercado.</p>
-                </div>
-                <div class="texto-atuacao">
-                    <h3>Design Digital</h3>
-                    <p class="p-atuacao">Criação de designs bonitos para redes sociais, como stories, posts, campanhas para ADS etc...</p>
-                </div>
-            </div>
-        </div>
-        <div class="container-atuacao" id="container-atuacao-2">
-            <div class="container-atuacao-txt">
-                <div class="texto-atuacao">
-                    <h3>Designer Gráfico</h3>
-                    <p>Design de projetos gráficos trabalhados exclusivamente para o público determinado. Folders, cartões de visita, folhetos, catálogos, revistas, informativos, anúncio para jornal e entre outras tipos de materiais gráficos.</p>
-                </div>
-                <div class="texto-atuacao">
-                    <h3>Identidade Visual</h3>
-                    <p>Criação de identidade visual, incluindo manual de aplicação personalizado da marca, em diversos formatos, tipos e estilos para publicações e orientações, juntamente com a criação do material de papelaria.</p>
-                </div>
-            </div>
-        </div>
-        <div class="container-atuacao" id="container-atuacao-2">
-            <div class="container-atuacao-txt" id="container-atuacao-3">
-                <div class="texto-atuacao">
-                    <h3>Apresentação</h3>
-                    <p>Criação de identidades visuais para apresentações para empresas. Apresentações simples de entender, objetivas, visualmente impactantes e que prendem a atenção da audiência.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Scroll suave -->
-    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
-    <script> 
-        const lenis = new Lenis()
-
-        lenis.on('scroll', (e) => {
-          console.log(e)
-        })
-      
-        function raf(time) {
-          lenis.raf(time)
-        requestAnimationFrame(raf)
-          }
-      
-        requestAnimationFrame(raf)
-    </script>
-    <script src="js/script.js"></script>
-    
-    <script>
-        var rellax = new Rellax('.rellax');
-    </script>
-
-
-    
-    <script src="js/toappear.js"></script> <!-- Animação de aparecimento no Scroll-->
+    </main>
+    <cite id="actuations">
+        
+    </cite>
 
 </body>
 </html>
