@@ -43,10 +43,6 @@ body {
     transition-duration: .3s;
 }
 
-body.dark {
-    background-color: var(--azul4);
-}
-
 header#menu {
     position: absolute;
     width: 100vw;
@@ -89,19 +85,6 @@ div#paginas p a {
     border-radius: 30px;
     transition-property: color;
     transition-duration: .3s;
-}
-
-#A-linkinicio.dark, #A-linksobremim.dark, #A-linkportfolio.dark{
-    color: var(--branco);
-}
-
-#button-light-dark {
-    display: flex;
-    align-items: center;
-    height: 60px;
-    width: auto;
-    margin-right: 40px;
-   
 }
 
 /* The switch - the box around the slider */
@@ -175,10 +158,6 @@ section#inicio {
     transition-duration: .3s;
 }
 
-#inicio.dark {
-    background-color: var(--azul4);
-}
-
 img#gato {
     position: absolute;
     z-index: 2;
@@ -200,13 +179,6 @@ div#logocapa{
     transition-duration: .3s;
 }
 
-div#logocapa.dark{
-    background-image: url(../imagens/logodark.png);
-
-    
-  
-}
-
 #work-tittle {
     position: absolute;
     width: 100vw;
@@ -217,12 +189,6 @@ div#logocapa.dark{
     text-align: center;
     font-size: 1.1em;
     font-weight: 100;
-}
-
-#work-tittle.dark{
-    color: var(--branco);
-    transition-property: color;
-    transition-duration: .3s;
 }
 
 #orcamento {
@@ -285,10 +251,6 @@ div#complete-name {
     transition-duration: .5s;
 }
 
-#linkedin.dark{
-    background-image: url(../imagens/icones/linkedin.png);
-}
-
 #linkedin:hover, #github:hover, #behance:hover, #instagram:hover{
     transition-property: transform;
     transition-duration: 1s;
@@ -306,10 +268,6 @@ div#complete-name {
     transition-duration: .5s;
 }
 
-#github.dark{
-    background-image: url(../imagens/icones/github.png);
-}
-
 #behance{
     width: 30px;
     height: 30px;
@@ -317,10 +275,6 @@ div#complete-name {
     background-size: cover;
     transition-property: background-image;
     transition-duration: .5s;
-}
-
-#behance.dark{
-    background-image: url(../imagens/icones/behance.png);
 }
 
 #instagram{
@@ -332,10 +286,6 @@ div#complete-name {
     transition-duration: .5s;
 }
 
-#instagram.dark{
-    background-image: url(../imagens/icones/instagram.png);
-}
-
 #atuacao {
     display: flex;
     background-color: var(--branco2);
@@ -344,10 +294,6 @@ div#complete-name {
     flex-direction: column;
     transition-property: background-color;
     transition-duration: .3s;
-}
-
-#atuacao.dark{
-    background-color: var(--azul4);
 }
 
 #atuacao h2 {
@@ -411,8 +357,4 @@ div#complete-name {
 
 .p-atuacao {
     color: var(--preto);
-}
-
-.p-atuacao.dark{
-    color: var(--branco);
 }
