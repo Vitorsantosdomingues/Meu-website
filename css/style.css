@@ -6,49 +6,60 @@
 
 /* Customização barra de scroll */
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 10px;
     background-color: transparent;
     border: 5px solid transparent;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background-color: var(--laranja);
     border-radius: 50px;
     
 }
 
-:root {
+html {
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    
     --laranja: #f77f00;
     --azul: #313bff;
     --azul1: #2932e7;
     --azul2: #1e27ce;
     --azul3: #161fbb;
     --azul4: #001122;
-    --roxo: #3b1180;
-    --branco: #ffffff;
+    --branco1: #ffffff;
     --branco2: #e5e5e5;
     --montserrat: 'Montserrat', sans-serif;
     --preto:#0b0b0e;
+
+    --secondtittle: #001122;
+    --maintittle: #f77f00;
+    --bgcolor: #e5e5e5;
+    --linkcolor: #001122;
+    --linkhover: #001122;
+    --linkhoverincontainer: #e5e5e5;
+    --containerlinkhover: #001122;
+    --textcolornopanel: #001122;
+    --textcolorwithpanel: #e5e5e5;
+    
 }
 
 body {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bgcolor);
+    font-family: var(--montserrat);
     overflow-x: hidden;
-    background-color: var(--branco2);
-    transition-property: background-color;
-    transition-duration: .3s;
 }
-
 nav {
     margin: 0;
     padding: 0;
 }
 
-nav#menudesktop{
+nav#menudesktop {
+    top: 0;
+    right: 0;
     position: absolute;
     width: 100vw;
     height: 70px;
@@ -59,20 +70,22 @@ nav#menudesktop{
 }
 
 div#logoMenu {
-    height: auto;
     margin-left: 40px;
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../imagens/logolight.png);
+}
+
+div#logoMenu.dark {
+    background-image: url(../imagens/logodark.png);
 }
 
 /* Configurando a imagem logo */
 
-div#logoMenu img {
-    width: 40px;
-    height: auto;
-    filter: invert(1);
-    user-select: none;
-}
-
-div#linksMenu{
+div#linksMenu {
     display: flex;
     height: 60px;
     align-items: center;
@@ -85,20 +98,28 @@ div#linksMenu p {
     text-transform: capitalize;
 }
 
-div#linksMenu p:hover a{
-    color: var(--azul4);
-    background-color: var(--laranja);
-    transition-property: color , background-color;
-    transition: .3s;
+div#linksMenu p:hover a {
+    color: var(--linkhoverincontainer);
+    background-color: var(--containerlinkhover);
+}
+
+div#linksMenu p:hover {
+    transform: translateY(10px);
+}
+
+div#linksMenu p {
+    transition-property: transform;
+    transition-duration: 5s;
+    transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 div#linksMenu p a {
     text-decoration: none;
-    color: var(--azul4);
+    color: var(--linkcolor);
     padding: 5px 20px;
-    border-radius: 30px;
-    transition-property: color;
-    transition-duration: .3s;
+    border-radius: 3px;
+    transition-property: color, background-color;
+    transition-duration: .3s, .3s;
 }
 
 /* The switch - the box around the slider */
@@ -107,6 +128,7 @@ div#linksMenu p a {
     display: inline-block;
     width: 3.8em;
     height: 2em;
+    margin-right: 20px;
   }
   
   /* Hide default HTML checkbox */
@@ -139,8 +161,8 @@ div#linksMenu p a {
     left: 10%;
     bottom: 15%;
     box-shadow: inset 15px -4px 0px 15px var(--laranja);
-    background: var(--background);
     transition: transform 0.5s, box-shadow 0.5s;
+    background: var(--background);
   }
   
   .switch-container input:checked + .slider {
@@ -153,15 +175,11 @@ div#linksMenu p a {
   }
   
 
-
-
 /* Configurando a capa do site */
 
 main#home {
-    height: 100vh;
+    height: 110vh;
     width: 100vw;
-    transition-property: background-color;
-    transition-duration: .3s;
 }
 
 img#gato {
@@ -181,14 +199,16 @@ div#logoHome{
     background-image: url(../imagens/logolight.png);
     background-size: cover;
     background-position: center;
-    transition-property: background-image;
-    transition-duration: .3s;
+}
+
+#logoHome.dark{
+    background-image: url(../imagens/logodark.png);
 }
 
 #work-tittle {
     position: absolute;
     width: 100vw;
-    color: var(--azul4);
+    color: var(--secondtittle);
     font-family: Arial, Helvetica, sans-serif;
     bottom: 5vh;
     letter-spacing: 3px;
@@ -198,16 +218,16 @@ div#logoHome{
 }
 
 
-span#titulo-firstname{
+span#titulo-firstname {
     display: flex;
-    color: var(--laranja);
+    color: var(--maintittle);
     font-size: 4em;
     font-weight: 600;
 }
 
-span#titulo-middlename{
+span#titulo-middlename {
     display: flex;
-    color: var(--laranja);
+    color: var(--maintittle);
     font-size: 4em;
     font-weight: 600;
 }
@@ -242,7 +262,11 @@ div#complete-name {
     transition-duration: .5s;
 }
 
-#linkedin:hover, #github:hover, #behance:hover, #instagram:hover{
+#linkedin.dark {
+    background-image: url(../imagens/icones/linkedin.png);
+}
+
+#linkedin:hover, #github:hover, #behance:hover, #instagram:hover {
     transition-property: transform;
     transition-duration: 1s;
     transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
@@ -259,7 +283,11 @@ div#complete-name {
     transition-duration: .5s;
 }
 
-#behance{
+#github.dark {
+    background-image: url(../imagens/icones/github.png);
+}
+
+#behance {
     width: 30px;
     height: 30px;
     background-image: url(../imagens/icones/behancelight.png);
@@ -268,7 +296,11 @@ div#complete-name {
     transition-duration: .5s;
 }
 
-#instagram{
+#behance.dark {
+    background-image: url(../imagens/icones/behance.png);
+}
+
+#instagram {
     width: 30px;
     height: 30px;
     background-image: url(../imagens/icones/instagramlight.png);
@@ -276,3 +308,83 @@ div#complete-name {
     transition-property: background-image;
     transition-duration: .5s;
 }
+
+#instagram.dark {
+    background-image: url(../imagens/icones/instagram.png);
+}
+
+/* Configurando o cite#actuations */
+
+cite#aboutme {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+#tittle-aboutme {
+    width: 100vw;
+    height: 15vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tittle-aboutme > h1 {
+    font-size: 2.5em;
+    font-family: var(--montserrat);
+    font-style: normal;
+    margin: 0;
+
+    color: var(--maintittle);
+}
+
+#my-actuations {
+    width: 100vw;
+    height: 81vh;
+  
+    display: flex;
+    justify-content: center;
+}
+
+#container-my-actuations {
+    width: 69vw;
+    height: 80vh;
+    
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#content-my-actuations {
+    width: 50%;
+    height: 33.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+#content-my-actuations > h2 {
+    margin: 0px;
+    font-size: 1.5em;
+    font-style: normal;
+    font-family: var(--montserrat);
+    color: var(--secondtittle);
+    margin: 3% 0 3% 0;
+}
+
+#content-my-actuations > p {
+    margin: 0px;
+    color: var(--textcolornopanel);
+    line-height: 1.3em;
+    font-size: 1em;
+    font-style: normal;
+    text-align: justify;
+    width: 90%;
+    font-family: var(--montserrat);
+}
+

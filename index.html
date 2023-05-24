@@ -18,7 +18,7 @@
     <nav id="menudesktop">
 
         <div id="logoMenu">
-            <img src="imagens/simbolo-preta.png" alt="logo">
+
         </div>
 
         <div id="linksMenu">
@@ -32,7 +32,7 @@
 
             <label class="switch-container">
 
-                <input id="checkbox-switch" type="checkbox">
+                <input name="theme" type="checkbox">
                 <span class="slider"></span>
 
               </label>
@@ -47,7 +47,8 @@
         src="imagens/gato/gato-laranja.png" alt="gato">
 
         <div>
-            <h2 id="work-tittle" class="rellax" data-rellax-speed="0.5"> <!-- Velocidade -->
+            <h2 id="work-tittle"
+             class="rellax" data-rellax-speed="0.5"> <!-- Velocidade -->
                 Desenvolvedor Web & Designer Gráfico
             </h2>
 
@@ -55,8 +56,7 @@
         <div id="logoHome">
 
         </div>
-        <div id="complete-name" 
-        class="rellax" data-rellax-speed="0"> <!-- Velocidade -->
+        <div id="complete-name" class="rellax" data-rellax-speed="0"> <!-- Velocidade -->
 
             <span id="titulo-firstname">
                 <span class="rellax" data-rellax-speed="3">V</span>
@@ -99,9 +99,60 @@
         </div>
 
     </main>
-    <cite id="actuations">
-        
+    <cite id="aboutme">
+        <div id="tittle-aboutme">
+            <h1>Sobre mim</h1>
+        </div>
+        <div id="my-actuations">
+                <div id="container-my-actuations">
+                    <div id="content-my-actuations">
+                        <h2>Design Digital</h2>
+                        <p>Criação de designs bonitos para redes sociais como instagram, facebook com objetivo de divulgar seu produto/serviço.</p>
+                    </div>
+                    <div id="content-my-actuations">
+                        <h2>Designer Gráfico</h2>
+                        <p>Design de projetos gráficos trabalhados exclusivamente para o público determinado. Folders, cartões de visita, folhetos, catálogos, revistas, informativos, anúncio para jornal e entre outras tipos de materiais gráficos.</p>
+                    </div>
+                    <div id="content-my-actuations">
+                        <h2>Identidade Visual</h2>
+                        <p>Criação de identidade visual, incluindo manual de aplicação personalizado da marca, em diversos formatos, tipos e estilos para publicações e orientações, juntamente com a criação do material de papelaria.</p>
+                    </div>
+                    <div id="content-my-actuations">
+                        <h2>Desenvolvimento Web</h2>
+                        <p>Criação e produção de sites web como Landing Page, Loja Virtual, Portais. acompanhando as tecnologias e tendências do mercado.</p>
+                    </div>
+                    <div id="content-my-actuations">
+                        <h2>Apresentação</h2>
+                        <p>Criação de identidades visuais para apresentações para empresas. Apresentações simples de entender, objetivas, visualmente impactantes e que prendem a atenção da audiência.</p>
+                    </div>
+                </div>
+        </div>
     </cite>
 
 </body>
+
 </html>
+
+    <!-- Scroll suave -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+    <script> 
+        const lenis = new Lenis()
+
+        lenis.on('scroll', (e) => {
+          console.log(e)
+        })
+      
+        function raf(time) {
+          lenis.raf(time)
+        requestAnimationFrame(raf)
+          }
+      
+        requestAnimationFrame(raf)
+    </script>
+    <script src="js/darkmode.js"></script>
+    
+    <script>
+        var rellax = new Rellax('.rellax');
+    </script>
+
+    <script src="js/toappear.js"></script> <!-- Animação de aparecimento no Scroll-->

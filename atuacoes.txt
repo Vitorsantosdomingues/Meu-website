@@ -4,7 +4,7 @@
             <div class="container-atuacao-txt">
                 <div class="texto-atuacao">
                     <h3>Desenvolvimento Web</h3>
-                    <p class="p-atuacao">Criação e produção de sites web como Landing Page, Loja Virtual, Portais. acompanhando as tecnologias e tendências do mercado.</p>
+                    <p>Criação e produção de sites web como Landing Page, Loja Virtual, Portais. acompanhando as tecnologias e tendências do mercado.</p>
                 </div>
                 <div class="texto-atuacao">
                     <h3>Design Digital</h3>
