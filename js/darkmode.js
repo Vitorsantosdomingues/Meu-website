@@ -48,6 +48,7 @@ const changeColors = (colors) => {
 
 checkbox.addEventListener("change", ({target}) => {
     target.checked ? changeColors(darkMode) : changeColors(initialColors)
+    
     if(target.checked){ //darkmode
         github.classList.add('dark')
         instagram.classList.add('dark')
