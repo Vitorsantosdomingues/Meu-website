@@ -111,6 +111,7 @@ div#linksMenu p {
     transition-property: transform;
     transition-duration: 5s;
     transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+
 }
 
 div#linksMenu p a {
