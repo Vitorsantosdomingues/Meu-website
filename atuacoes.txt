@@ -1,0 +1,35 @@
+<section id="sectionProfile">
+        <h2>Atuação</h2>
+        <div class="container-atuacao" id="container-atuacao-1">
+            <div class="container-atuacao-txt">
+                <div class="texto-atuacao">
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Criação e produção de sites web como Landing Page, Loja Virtual, Portais. acompanhando as tecnologias e tendências do mercado.</p>
+                </div>
+                <div class="texto-atuacao">
+                    <h3>Design Digital</h3>
+                    <p class="p-atuacao">Criação de designs bonitos para redes sociais, como stories, posts, campanhas para ADS etc...</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-atuacao" id="container-atuacao-2">
+            <div class="container-atuacao-txt">
+                <div class="texto-atuacao">
+                    <h3>Designer Gráfico</h3>
+                    <p>Design de projetos gráficos trabalhados exclusivamente para o público determinado. Folders, cartões de visita, folhetos, catálogos, revistas, informativos, anúncio para jornal e entre outras tipos de materiais gráficos.</p>
+                </div>
+                <div class="texto-atuacao">
+                    <h3>Identidade Visual</h3>
+                    <p>Criação de identidade visual, incluindo manual de aplicação personalizado da marca, em diversos formatos, tipos e estilos para publicações e orientações, juntamente com a criação do material de papelaria.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-atuacao" id="container-atuacao-2">
+            <div class="container-atuacao-txt" id="container-atuacao-3">
+                <div class="texto-atuacao">
+                    <h3>Apresentação</h3>
+                    <p>Criação de identidades visuais para apresentações para empresas. Apresentações simples de entender, objetivas, visualmente impactantes e que prendem a atenção da audiência.</p>
+                </div>
+            </div>
+        </div>
+    </section>
