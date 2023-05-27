@@ -210,7 +210,7 @@ span#titulo-middlename {
   #redes-sociais {
     display: flex;
     position: absolute;
-    width: 63vw;
+    width: 60vw;
     height: 30px;
     justify-content: space-between;
     top: 73vh;
