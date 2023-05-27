@@ -7,6 +7,7 @@ const github = document.querySelector("div#github");
 const instagram = document.querySelector("div#instagram");
 const logoMenu = document.querySelector("div#logoMenu");
 const logoHome = document.querySelector("div#logoHome");
+const gato = document.querySelector("div#gato")
 
 const getStyle = (element, style) =>
   window.getComputedStyle(element).getPropertyValue(style);
@@ -60,6 +61,7 @@ const enableDarkMode = () => {
   linkedin.classList.add("dark");
   logoMenu.classList.add("dark");
   logoHome.classList.add("dark");
+  gato.classList.add("dark")
 };
 
 const disableDarkMode = () => {
@@ -69,6 +71,7 @@ const disableDarkMode = () => {
   linkedin.classList.remove("dark");
   logoMenu.classList.remove("dark");
   logoHome.classList.remove("dark");
+  gato.classList.remove("dark")
 };
 
 checkbox.addEventListener("change", ({ target }) => {
