@@ -191,6 +191,7 @@
     display: flex;
     font-weight: 600;
     translate: -0px;
+    letter-spacing: .1em;
 }
 
 span#titulo-middlename {
@@ -198,6 +199,7 @@ span#titulo-middlename {
     font-weight: 600;
     translate: 0;
     font-size: 4rem;
+    letter-spacing: .1em;
   
   
 }
@@ -205,12 +207,13 @@ span#titulo-middlename {
   #titulo-middlename {
     font-size: .8em;
     font-weight: 700;
+    
   }
 
   #redes-sociais {
     display: flex;
     position: absolute;
-    width: 60vw;
+    width: 66vw;
     height: 30px;
     justify-content: space-between;
     top: 70vh;
