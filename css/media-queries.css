@@ -168,10 +168,8 @@
     font-size: 1em;
     font-weight: 500;
     color: var(--secondtittle);
-    width: 80vw;
+    width: 100vw;
     text-align: center;
-    left: 50%;
-    translate: -50%;
   }
 
   #complete-name {
