@@ -163,6 +163,7 @@
   }
 
   #work-tittle {
+    width: 90vw;
     position: absolute;
     bottom: 10vh;
     font-size: 1em;
@@ -170,7 +171,8 @@
     color: var(--secondtittle);
     left: 50%;
     translate: -50%;
-    text-align: justify;
+    text-align: center;
+    letter-spacing: .1em;
   }
 
   #complete-name {
@@ -214,7 +216,7 @@
   #redes-sociais {
     display: flex;
     position: absolute;
-    width: 66vw;
+    width: 90vw;
     height: 30px;
     justify-content: space-between;
     bottom: 5vh;
