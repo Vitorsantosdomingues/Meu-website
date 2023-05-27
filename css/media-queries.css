@@ -164,12 +164,13 @@
 
   #work-tittle {
     position: absolute;
-    bottom: 5vh;
+    bottom: 10vh;
     font-size: 1em;
     font-weight: 500;
     color: var(--secondtittle);
-    width: 100vw;
-    text-align: center;
+    left: 50%;
+    translate: -50%;
+    text-align: justify;
   }
 
   #complete-name {
@@ -216,7 +217,7 @@
     width: 66vw;
     height: 30px;
     justify-content: space-between;
-    top: 70vh;
+    bottom: 5vh;
     left: 50%;
     translate: -50%;
     z-index: 4;
