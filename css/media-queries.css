@@ -185,20 +185,21 @@
     left: 50%;
     translate: -50%;
     line-height: .8em;
+    width: 100vw;
   }
 
   span#titulo-firstname {
     display: flex;
     font-weight: 600;
-    translate: -0px;
+    margin: auto;
     letter-spacing: .1em;
 }
 
-span#titulo-middlename {
+  span#titulo-middlename {
     display: flex;
     font-weight: 600;
-    translate: 0;
     font-size: 4rem;
+    margin: auto;
     letter-spacing: .1em;
   
   
