@@ -18,7 +18,7 @@
 
     body {
         background-color: var(--bgcolor);
-        
+        overflow-y: hidden;
 
     }
 
@@ -27,8 +27,6 @@
         width: 100vw;
         height: 110vh;
         display: flex;
-        background-color: red;
-
     }
 
     #menudesktop {
@@ -109,7 +107,6 @@
     right: 0;
     bottom: 0;
     background: #e1e1e1;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.183);
     transition: background-color 0.5s;
     border-radius: 30px;
   }
@@ -259,6 +256,334 @@
   transition-duration: .5s;
 }
 
+  #github.dark {
+    background-image: url(../imagens/icones/github.png);
+  }
+
+  #behance {
+    width: 30px;
+    height: 30px;
+    background-image: url(../imagens/icones/behancelight.png);
+    background-size: cover;
+    transition-property: background-image;
+    transition-duration: .5s;
+  }
+
+  #behance.dark {
+    background-image: url(../imagens/icones/behance.png);
+  }
+
+  #instagram {
+    width: 30px;
+    height: 30px;
+    background-image: url(../imagens/icones/instagramlight.png);
+    background-size: cover;
+    transition-property: background-image;
+    transition-duration: .5s;
+  }
+
+  #instagram.dark {
+    background-image: url(../imagens/icones/instagram.png);
+  }
+
+  #aboutme {
+    width: 100vw;
+    height: 160vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+  }
+
+  #tittle-aboutme {
+    font-size: 1.1rem;
+    font-style: normal;
+    
+    
+  }
+
+  #tittle-aboutme > h1 {
+    width: 100vw;
+    margin: 0;
+    text-align: center;
+    color: var(--secondtittle);
+  }
+
+  #container-my-actuations {
+    width: 76vw;
+    height: auto;
+  }
+
+  #content-my-actuations > h2{
+    margin: 0;
+    padding: 30px 0 0 0;
+    text-align: center;
+    color: var(--secondtittle);
+    font-style: normal;
+
+  }
+
+  #content-my-actuations > p{
+    margin: 0;
+    padding: 30px 0 0 0;
+    text-align: justify;
+    color: var(--textcolornopanel);
+    font-style: normal;
+
+  }
+}
+
+@media (min-width: 460px) {
+  
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+  border: 5px solid transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--laranja);
+  border-radius: 50px;
+  
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+}
+
+nav#menudesktop {
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: 100vw;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+}
+
+div#logoMenu {
+  margin-left: 40px;
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../imagens/logolight.png);
+}
+
+div#logoMenu.dark {
+  background-image: url(../imagens/logodark.png);
+}
+
+/* Configurando a imagem logo */
+
+div#linksMenu {
+  display: flex;
+  height: 60px;
+  align-items: center;
+}
+
+div#linksMenu p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  padding: 0px 30px;
+  text-transform: capitalize;
+}
+
+div#linksMenu p:hover a {
+  color: var(--linkhoverincontainer);
+  background-color: var(--containerlinkhover);
+}
+
+div#linksMenu p:hover {
+  transform: translateY(10px);
+}
+
+div#linksMenu p {
+  transition-property: transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+
+}
+
+div#linksMenu p a {
+  text-decoration: none;
+  color: var(--linkcolor);
+  padding: 5px 20px;
+  border-radius: 3px;
+  transition-property: color, background-color;
+  transition-duration: .3s, .3s;
+}
+
+/* The switch - the box around the slider */
+.switch-container {
+  position: relative;
+  display: inline-block;
+  width: 3.8em;
+  height: 2em;
+  margin-right: 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch-container input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.switch-container .slider {
+  --background: var(--azul3);
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--background);
+  transition: background-color 0.5s;
+  border-radius: 30px;
+}
+
+.switch-container .slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 50%;
+  left: 10%;
+  bottom: 15%;
+  box-shadow: inset 15px -4px 0px 15px var(--laranja);
+  transition: transform 0.5s, box-shadow 0.5s;
+  background: var(--background);
+}
+
+.switch-container input:checked + .slider {
+  background-color: #000513;
+}
+
+.switch-container input:checked + .slider:before {
+  transform: translateX(115%);
+  box-shadow: inset 8px -4px 0px 0px var(--azul);
+}
+
+
+/* Configurando a capa do site */
+
+main#home {
+  height: 110vh;
+  width: 100vw;
+}
+
+#gato {
+  position: absolute;
+  z-index: 2;
+  height: 40vw;
+  width: 40vw;
+  right: 13vw;
+
+  top: 0vh;
+  background-image: url(../imagens/gato/gato-laranja.png);
+  background-position: center;
+  background-size: cover;
+}
+div#logoHome{
+  position: absolute;
+  height: 450px;
+  width: 450px;
+  top: 15vh;
+  right: 15.5vw;
+  z-index: 1;
+  background-image: url(../imagens/logolight.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#logoHome.dark{
+  background-image: url(../imagens/logodark.png);
+}
+
+#work-tittle {
+  position: absolute;
+  width: 100vw;
+  color: var(--secondtittle);
+  font-family: Arial, Helvetica, sans-serif;
+  bottom: 5vh;
+  letter-spacing: 3px;
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: 100;
+}
+
+
+span#titulo-firstname {
+  display: flex;
+  color: var(--maintittle);
+  font-size: 4em;
+  font-weight: 600;
+}
+
+span#titulo-middlename {
+  display: flex;
+  color: var(--maintittle);
+  font-size: 4em;
+  font-weight: 600;
+}
+
+div#complete-name {
+  position: absolute;
+  top: 35vh;
+  left: 15.5vw;
+  
+  width: 17.7em;
+  line-height: 4em;
+  letter-spacing: .2em;
+}
+
+#redes-sociais {
+  display: flex;
+  position: absolute;
+  left: 15.5vw;
+  top: 60vh;
+  width: 21vw;
+  height: 30px;
+  
+  justify-content: space-between;
+}
+
+#linkedin {
+  width: 30px;
+  height: 30px;
+  background-image: url(../imagens/icones/linkedinlight.png);
+  background-size: cover;
+  transition-property: background-image;
+  transition-duration: .5s;
+}
+
+#linkedin.dark {
+  background-image: url(../imagens/icones/linkedin.png);
+}
+
+#linkedin:hover, #github:hover, #behance:hover, #instagram:hover {
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+  transform: translateY(-10px);
+}
+
+#github {
+  width: 30px;
+  height: 30px;
+  background-image: url(../imagens/icones/githublight.png);
+  background-size: cover;
+  border-radius: 50px;
+  transition-property: background-image;
+  transition-duration: .5s;
+}
+
 #github.dark {
   background-image: url(../imagens/icones/github.png);
 }
@@ -289,15 +614,79 @@
   background-image: url(../imagens/icones/instagram.png);
 }
 
-  #aboutme {
-    width: 100vw;
-    height: 100vh;
-    background-color: blue;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+/* Configurando o cite#actuations */
+
+cite#aboutme {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
 }
 
-   
+#tittle-aboutme {
+  width: 100vw;
+  height: 15vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tittle-aboutme > h1 {
+  font-size: 2.5em;
+  font-family: var(--montserrat);
+  font-style: normal;
+  margin: 0;
+
+  color: var(--maintittle);
+}
+
+#my-actuations {
+  width: 100vw;
+  height: 81vh;
+
+  display: flex;
+  justify-content: center;
+}
+
+#container-my-actuations {
+  width: 69vw;
+  height: 80vh;
+  
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+#content-my-actuations {
+  width: 50%;
+  height: 33.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+}
+
+#content-my-actuations > h2 {
+  margin: 0px;
+  font-size: 1.5em;
+  font-style: normal;
+  font-family: var(--montserrat);
+  color: var(--secondtittle);
+  margin: 3% 0 3% 0;
+}
+
+#content-my-actuations > p {
+  margin: 0px;
+  color: var(--textcolornopanel);
+  line-height: 1.3em;
+  font-size: 1em;
+  font-style: normal;
+  text-align: justify;
+  width: 90%;
+  font-family: var(--montserrat);
+}
+}
 
