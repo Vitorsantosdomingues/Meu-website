@@ -1101,5 +1101,13 @@ cite#aboutme {
   width: 90%;
   font-family: var(--montserrat);
 }
+
+#portfolio {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 210vh;
+  background-color: red;
+}
 }
 
