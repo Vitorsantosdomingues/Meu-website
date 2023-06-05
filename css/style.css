@@ -30,7 +30,6 @@ html {
     --containerlinkhover: #001122;
     --textcolornopanel: #001122;
     --textcolorwithpanel: #e5e5e5;
-    
 }
 
 body {
@@ -41,6 +40,77 @@ body {
     padding: 0;
 }
 
+section#section-portfolio {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 220vh;
+}
 
+#portfolio {
+    width: 75%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+}
 
+.port-box {
+    width: 33.33%;
+    height: 50%;
+   
+    display: flex;
+}
 
+#box1 , #box2 , #box3 , #box4 , #box5 , #box6 , #box7 , #box8 , #box9 {
+    width: 100%;
+    margin: 8px;
+    border-radius: 10px;
+    background-color: var(--laranja);
+}
+
+.boxsmall {
+    height: 200px;
+}
+
+.boxsmallmedium {
+    height: 250px;
+}
+
+.boxmedium {
+    height: 300px;
+}
+
+.boxmediumlarge {
+    height: 350px;
+}
+
+.boxlarge {
+    height: 400px;
+}
+
+#box1 {
+    content: 1;
+}
+
+#box4 {
+    transform: translateY(-50px);
+}
+
+#box5 {
+    transform: translateY(-150px);
+}
+
+#box7 {
+    transform: translateY(-50px);
+}
+
+#box8 {
+    transform: translateY(-200px);
+}
+
+#box9 {
+    transform: translateY(-150px);
+}

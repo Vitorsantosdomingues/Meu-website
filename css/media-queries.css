@@ -52,26 +52,6 @@
         background-image: url(../imagens/logodark.png);
     }
 
-    @keyframes openmenu {
-      0% {
-        width: 0vw;
-      }
-
-      100% {
-        width: 76vw;
-      }
-    }
-
-    @keyframes closemenu {
-      0% {
-        width: 76vw;
-      }
-
-      100% {
-        width: 0vw;
-      }
-    }
-
     #linksMenu {
         position: absolute;
         display: flex;
@@ -1102,12 +1082,8 @@ cite#aboutme {
   font-family: var(--montserrat);
 }
 
-#portfolio {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  top: 210vh;
-  background-color: red;
-}
+
+
+
 }
 
