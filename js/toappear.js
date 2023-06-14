@@ -9,3 +9,6 @@ sr.reveal('#box6', { duration: 1000});
 sr.reveal('#box7', { duration: 1000});
 sr.reveal('#box8', { duration: 1000});
 sr.reveal('#box9', { duration: 1000});
+sr.reveal('.content-my-actuations', { duration: 1000});
+sr.reveal('#tittle-aboutme', { duration: 1000});
+

@@ -318,7 +318,7 @@
     height: auto;
   }
 
-  #content-my-actuations > h2{
+  .content-my-actuations > h2{
     margin: 0;
     padding: 30px 0 0 0;
     text-align: center;
@@ -327,7 +327,7 @@
 
   }
 
-  #content-my-actuations > p{
+  .content-my-actuations > p{
     margin: 0;
     padding: 30px 0 0 0;
     text-align: justify;
@@ -655,7 +655,7 @@ transition-duration: .5s;
   height: auto;
 }
 
-#content-my-actuations > h2{
+.content-my-actuations > h2{
   margin: 0;
   padding: 30px 0 0 0;
   text-align: center;
@@ -664,7 +664,7 @@ transition-duration: .5s;
 
 }
 
-#content-my-actuations > p{
+.content-my-actuations > p{
   margin: 0;
   padding: 30px 0 0 0;
   text-align: justify;
@@ -694,7 +694,7 @@ transition-duration: .5s;
     flex-direction: row;
   }
   
-  #content-my-actuations {
+  .content-my-actuations {
     width: 50%;
     height: 33.33%;
     display: flex;
@@ -706,7 +706,7 @@ transition-duration: .5s;
   
   
   
-  #content-my-actuations > p {
+  .content-my-actuations > p {
     margin: 0px;
     color: var(--textcolornopanel);
     line-height: 1.3em;
@@ -717,7 +717,7 @@ transition-duration: .5s;
     font-family: var(--montserrat);
   }
 
-  #content-my-actuations > h2 {
+  .content-my-actuations > h2 {
     color: var(--laranja);
   }
 }
@@ -1052,7 +1052,7 @@ cite#aboutme {
   flex-direction: row;
 }
 
-#content-my-actuations {
+.content-my-actuations {
   width: 50%;
   height: 33.33%;
   display: flex;
@@ -1062,7 +1062,7 @@ cite#aboutme {
 
 }
 
-#content-my-actuations > h2 {
+.content-my-actuations > h2 {
   margin: 0px;
   font-size: 1.5em;
   font-style: normal;
@@ -1071,7 +1071,7 @@ cite#aboutme {
   margin: 3% 0 3% 0;
 }
 
-#content-my-actuations > p {
+.content-my-actuations > p {
   margin: 0px;
   color: var(--textcolornopanel);
   line-height: 1.3em;
@@ -1081,9 +1081,4 @@ cite#aboutme {
   width: 90%;
   font-family: var(--montserrat);
 }
-
-
-
-
 }
-

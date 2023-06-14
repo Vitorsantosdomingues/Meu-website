@@ -46,7 +46,7 @@ section#section-portfolio {
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 220vh;
+    top: 215vh;
 }
 
 #portfolio {
@@ -113,4 +113,18 @@ section#section-portfolio {
 
 #box9 {
     transform: translateY(-150px);
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.box > p {
+    
+    font-size: 1.5em;
+    color: var(--containerlinkhover);
+
 }
